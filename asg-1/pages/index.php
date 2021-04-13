@@ -18,8 +18,10 @@
         <main>
             <h2>Online Grocery</h2>
                 <?php include 'left-hand.php';?>
+                <!-- <?php include 'top-right.php';?> -->
+                <!-- <?php include 'bottom-right.php';?> -->
         </main>
         
-        <script src="../js/script.js"></script>
+        <!-- <script src="../js/script.js"></script> -->
     </body>
 </html>
