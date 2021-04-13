@@ -11,9 +11,13 @@
         <meta name="description" content="Grocery System Store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
+
     </head>
     <body>
-        <h1>testing</h1>
+        
+        <main>
+        
+        </main>
         
         <script src="../js/script.js"></script>
     </body>
