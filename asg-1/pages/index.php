@@ -16,7 +16,8 @@
     <body>
         
         <main>
-        
+            <h2>Online Grocery</h2>
+                <?php include 'left-hand.php';?>
         </main>
         
         <script src="../js/script.js"></script>
