@@ -1,4 +1,4 @@
-CREATE DATABASE uts,
+CREATE DATABASE uts;
 
 use uts;
 
