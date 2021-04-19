@@ -14,6 +14,5 @@
     </head>
     <body>
         <!-- type something here -->
-        <script src="../js/productCart.js"></script>
+        <script src="../js"></script>
     </body>
-</html>
