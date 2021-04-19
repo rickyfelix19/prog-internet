@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <!-- type something here -->
+        <h1>Your Shopping Cart</h1>
+        
         <script src="../js/shoppingCart.js"></script>
     </body>
 </html>

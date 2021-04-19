@@ -1,16 +1,20 @@
 // this script is for
 //     `left-hand.php`
 
-function showOtherColumns(categoryID) {
-    var parent = document.getElementById("outputOtherColumn");
-    var child = parent.firstChild;
-    if (child != NULL ) {
-        parent.removeChild(child);
-    }
+function showOtherColumns() {
     
-    var pic = document.createElement("img");
-    parent.appendChild(pic);
 }
+
+// function showOtherColumns(categoryID) {
+//     var parent = document.getElementById("outputOtherColumn");
+//     var child = parent.firstChild;
+//     if (child != NULL ) {
+//         parent.removeChild(child);
+//     }
+    
+//     var pic = document.createElement("img");
+//     parent.appendChild(pic);
+// }
 
 
 /*
