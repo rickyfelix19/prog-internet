@@ -10,19 +10,25 @@
         <meta name="author" content="Ricky Felix">
         <meta name="description" content="Grocery System Store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
 
     </head>
     <body>
         
         <main>
             <h2>Online Grocery</h2>
-                <?php include 'left-hand.php';?> 
-                <!-- <?php include 'top-right.php';?> -->
-                <!-- <?php include 'bottom-right.php';?> -->
+                <div class="grid-container">
+                    <div class="grid-area: left-hand"> <!-- left hand pane  -->
+                        <?php include './pages/left-hand.php';?>
+                    </div>
+                    <div class="right-hand"> 
+                        <div style="grid-area: top-right"><?php include './pages/top-right.php';?></div>
+                        <div class="grid-area: bottom-right"><?php include './pages/bottom-right.php';?></div>
+                    </div>
+                </div>
         </main>
         
         <!-- include all javascript -->
-        <script src="../js/"></script> 
+        <script src="./js/"></script> 
     </body>
 </html>

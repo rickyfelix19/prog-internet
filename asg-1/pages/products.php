@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <title>Grocery System Store</title>
 
-        <!-- descriptipn -->
+        <!-- description -->
         <meta name="author" content="Ricky Felix">
         <meta name="description" content="Grocery System Store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,14 @@
 
             // 5. Display values
             if ($num_rows > 0 ) {
+                print "<form name='product' action='cart.php' onsubmit='return productsCart();'>";
                 print "<table>";
+                print"<tr>\n";
+                    print"<th>Product Id</th>";
+                    print"<th>Product Name</th>";
+                    print"<th>Product Quantity</th>";
+                    print"<th>Unit Quantity</th>";
+                print"</tr>";
                         // get the index from the array
                 while ( $a_row = mysqli_fetch_array($result) ) { // 4. To retrieve the rows
                     print "<input type='hidden' name='product_id' value=$product_id >";
@@ -55,6 +62,7 @@
                     print "<input type='hidden' name='unit_price' value=\"" . $a_row[unit_price] . "\">";
                     print "<input type='hidden' name='unit_quantity' value=\"" . $a_row[unit_quantity] . "\">";
                         print "<tr>/n";
+                    print "<td class='productForm'>".$a_row['product_id']."</td>";
                     print "<td class='productForm'>".$a_row['product_name']."</td>";
                     print "<td class='productForm'>".$a_row['unit_price']."</td>";
                     print "<td class='productForm'>".$a_row['unit_quantity']."</td>";
