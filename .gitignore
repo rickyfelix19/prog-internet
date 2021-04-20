@@ -87,6 +87,8 @@ Thumbs.db
 *.key
 *.pem
 
+# ignore directory files
+./previous
 # --------------------------------------------------------
 # BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
 # --------------------------------------------------------
