@@ -1,0 +1,25 @@
+body {
+    background-color: #00ffff;
+}
+
+/* main index layout */
+
+.container {
+    display: flex;
+}
+
+.container__half {
+    flex: 1;
+}
+
+.top_right {
+    /* top: 0 - 70 */
+    /* right: 50 - 100 */
+}
+
+.bottom_right {
+    /* top: 70 - 100 */
+    /* right: 50 - 100 */
+}
+
+/* end */
