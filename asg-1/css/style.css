@@ -1,3 +1,11 @@
+/* color pallette choices:
+    - #00ffff -> cyan -> main
+    - 1FAA6C -> bright green
+    - DFA94C -> orange-ish
+    - BC3725 -> orange and red ish
+    - 71150E  -> dark red
+*/
+
 body {
     background-color: #00ffff;
 }

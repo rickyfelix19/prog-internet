@@ -24,7 +24,7 @@
                     <area alt="Pet Food" title="Pet Food" coords="385,139,463,177" shape="rect" id="hover" >
                 </map>
 
-                <img hidden src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map>
+                <img src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map id="frozen-map">
                 <map name="frozen-map"> 
                     <area alt="Hamburger Patties" title="Hamburger Patties"  coords="5,132,87,168" shape="rect" href= "products.php?product_id=1002" target="top-right"></area>
                     <area alt="500 gram - Fish Fingers" title="500 gram - Fish Fingers"  coords="60,249,140,289" shape="rect" href= "products.php?product_id=1000" target="top-right"></area>
@@ -34,7 +34,7 @@
                     <area alt="2 Litre - Tub Ice Cream" title="2 Litre - Tub Ice Cream"  coords="344,247,427,287" shape="rect" href= "products.php?product_id=1005" target="top-right"></area>
                 </map>
 
-                <img hidden src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map>
+                <img src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map id="fresh-map">
                 <map name="fresh-map"> 
                     <area alt="T'bone Steak" title="T'bone Steak"  coords="5,130,68,169" shape="rect" href= "products.php?product_id=3002" target="top-right"> </area>
                     <area alt="500 gram - Cheddar Cheese" title="500 gram - Cheddar Cheese"  coords="35,247,113,286" shape="rect" href= "products.php?product_id=3000" target="top-right"> </area>
@@ -46,7 +46,7 @@
                     <area alt="Peaches" title="Peaches"  coords="417,131,479,168" shape="rect" href= "products.php?product_id=3005" target="top-right"> </area>
                 </map>
 
-                <img hidden src="../images/beverages.png" alt="beverages" usemap=#beverages-map>
+                <img src="../images/beverages.png" alt="beverages" usemap=#beverages-map id="beverages-map">
                 <map name="beverages-map">
                     <area alt="Chocolate Bar" title="Chocolate Bar"  coords="390,135,471,173" shape="rect" href= "products.php?product_id=4005" target="top-right"> </area>
                     <area alt="200 gram - Coffee" title="200 gram - Coffee"  coords="21,243,82,279" shape="rect" href= "4003" target="top-right"> </area>
@@ -56,7 +56,7 @@
                     <area alt="Pack 100 - Earl Grey" title="Pack 100 - Earl Grey"  coords="227,242,291,281" shape="rect" href= "products.php?product_id=4001" target="top-right"> </area>
                 </map>
                 
-                <img hidden src="../images/home-health.png" alt="home health" usemap=#health-map>
+                <img src="../images/home-health.png" alt="home health" usemap=#health-map id="health-map">
                 <map name="health-map">
                     <area alt="Pack 24 - Panadol" title="Pack 24 - Panadol"  coords="61,247,141,285" shape="rect" href= "products.php?product_id=2000" target="top-right"> </area>
                     <area alt="Bottle 50 - Panadol" title="Bottle 50 - Panadol"  coords="156,248,234,285" shape="rect" href= "products.php?product_id=2001" target="top-right"> </area>
@@ -67,7 +67,7 @@
                     <area alt="Bath Soap" title="Bath Soap"  coords="7,130,89,168" shape="rect" href= "products.php?product_id=2002" target="top-right"> </area>
                 </map>
 
-                <img hidden src="../images/pet-food.png" alt="pet food" usemap=#pet-map>
+                <img src="../images/pet-food.png" alt="pet food" usemap=#pet-map id="pet-map">
                 <map name="pet-map"> 
                     <area alt="Bird Food" title="Bird Food"  coords="182,170,101,130" shape="rect" href= "products.php?product_id=5002" target="top-right"> </area>
                     <area alt="Cat Food" title="Cat Food"  coords="195,130,276,17" shape="rect" href= "products.php?product_id=5003" target="top-right"> </area>
