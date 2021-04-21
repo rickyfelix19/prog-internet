@@ -44,7 +44,7 @@ session_start();
 
                 // 5. Display values
                 if ($num_rows > 0 ) {
-                    print "<form name='product' action='cart.php' method="POST">";
+                    print "<form name='product' action='cart.php' method='POST'>";
                         print "<table>";
                             print"<tr>\n";
                                 print"<th>Product Name</th>";
