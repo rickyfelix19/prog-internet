@@ -4,7 +4,7 @@ use assignment1;
 -- ----------------------------
 -- Table structure for products
 -- ----------------------------
-DROP TABLE IF EXISTS `products`;
+DROP TABLE IF EXISTS `products`;  
 CREATE TABLE `products` (
   `product_id` int(10) unsigned DEFAULT NULL,
   `product_name` varchar(20) DEFAULT NULL,

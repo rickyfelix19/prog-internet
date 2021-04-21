@@ -1,3 +1,57 @@
+<?php
+session_start();
+
+// 0. Get Values from Other Pages
+
+// 1. Connect to DB
+ $conn = new mysqli_connect("localhost", "uts", "internet", "assignment1"); // server host, username, password, database name
+ if (!$conn) {
+    die("Could  not connect to the server");
+ }
+
+ 
+// 2. Run a query
+$product_id = $_REQUEST['product_id'];
+$query_string = "select * from products where product_id = $product_id";
+
+// 3. Execute a query
+$result = mysqli_query($conn, $query_string);
+
+// 4. Number of return rows
+$num_rows = mysqli_num_rows($result);
+// echo $num_rows; // check and see if the code above runs properly or not
+
+// 5. Display values
+if ($num_rows > 0 ) {
+    print "<form name='product' action='cart.php' onsubmit='return productsCart();'>";
+        print "<table>";
+            print"<tr>\n";
+                print"<th>Product Name</th>";
+                print"<th>Unit Price</th>";
+                print"<th>Unit Quantity</th>";
+                print"<th>Required Quantity</th>";
+                print"<th>Total Cose</th>";
+            print"</tr>";
+            print"<tr>\n";
+                // automatically add here
+            print"</tr>";
+            print"<tr>\n";
+            print"<tr>\n";
+                print"<th>Number of Products</th>";
+                print"<th>Shopping Cart Total</th>";
+            print"</tr>";
+            print"<tr>\n";
+                print "<td class='cartForm'><button type='submit' value='Purchase' class='buy'>Add to Cart</button></td>";
+            print"</tr>";
+            print"<tr>\n";
+                print "<td class='cartForm'>button type='reset'>Clear Form</td>";
+            print"</tr>";
+        print "</table>";
+    print"</form>";
+}
+ 
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -15,8 +69,12 @@
     </head>
     <body>
         
+        <main>
 
-    
+        </main>
+        
         <script src="../js/cart.js"></script>
     </body>
 </html>
+
+https://www.allphptricks.com/simple-shopping-cart-using-php-and-mysql/

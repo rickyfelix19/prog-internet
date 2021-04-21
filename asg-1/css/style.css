@@ -13,13 +13,24 @@ body {
 }
 
 .top_right {
+    position: sticky;
     /* top: 0 - 70 */
     /* right: 50 - 100 */
 }
 
 .bottom_right {
+    position: sticky;
     /* top: 70 - 100 */
     /* right: 50 - 100 */
 }
 
 /* end */
+
+/* checkout form */
+
+.checkout {
+    position: fixed;/* or absolute */
+    top: 50%;
+    left: 50%;
+    background-color: grey;
+}

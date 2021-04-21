@@ -20,21 +20,17 @@
     <body>
         
         <main>
-        <main>
-            <h1>Add Product to Cart</h1>
-            
             <?php
             // 0. Get Values from Pages
             // $GET_REQUEST = 
 
             // 1. Connect to Database
-            $conn = new mysqli_connect("localhost", "", "", "assignment1"); // server host, username, password, database name
+            $conn = new mysqli_connect("localhost", "uts", "internet", "assignment1"); // server host, username, password, database name
 
             // Check connection
             if (!$conn) {
-            die("Connection failed, could not connect to the server" . $conn->connect_error);
+            die("Connection failed, could not connect to the server");
             }
-            echo "Connected successfully";
 
             // 2. Run a query
             $product_id = $_REQUEST['product_id'];
@@ -63,12 +59,15 @@
                     print "<input type='hidden' name='product_name' value=\"" . $a_row[product_name] . "\">";
                     print "<input type='hidden' name='unit_price' value=\"" . $a_row[unit_price] . "\">";
                     print "<input type='hidden' name='unit_quantity' value=\"" . $a_row[unit_quantity] . "\">";
+                    print "<input type='hidden' name='in_stock' value=\"" . $a_row[in_stock] . "\">";
+                    print "<input type='hidden' name='unit_quantity' value=\"" . $a_row[unit_quantity] . "\">";
                         print "<tr>/n";
                     print "<td class='productForm'>".$a_row['product_id']."</td>";
                     print "<td class='productForm'>".$a_row['product_name']."</td>";
                     print "<td class='productForm'>".$a_row['unit_price']."</td>";
                     print "<td class='productForm'>".$a_row['unit_quantity']."</td>";
                     print "<td class='productForm'>".$a_row['in_stock']."</td>";
+                    print "<td class='productForm'><button type='submit' class='buy'>Add to Cart</button></td>";
             }
                 print"</table>";
                 print"</form>";
