@@ -29,7 +29,6 @@ session_start();
                 if (!$conn) {
                     die("Could  not connect to the server");
                 }
-
                 
                 // 2. Run a query
                 $product_id = $_REQUEST['product_id'];
@@ -44,7 +43,8 @@ session_start();
 
                 // 5. Display values
                 if ($num_rows > 0 ) {
-                    print "<form name='product' action='cart.php' method='POST'>";
+                    // this form comes from cart to checkout
+                    print "<form name='checkout' action='checkout.php' method='POST'>";
                         print "<table>";
                             print"<tr>\n";
                                 print"<th>Product Name</th>";

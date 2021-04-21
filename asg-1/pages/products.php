@@ -47,7 +47,8 @@
                 // 5. Display values
                 if ($num_rows > 0 ) {
                     if ( $a_row = mysqli_fetch_array($result) ) { // 4. To retrieve the rows
-                    print"<form action ='checkout.php' name='checkout' method='GET'>";
+                    // this form comes from catalogue to product
+                    print"<form action ='cart.php' name='cart' method='GET'>";
                     print"<table>";
                     print"<tr>\n";
                         print"<th>Product Id</th>";
@@ -67,7 +68,7 @@
                     print"</table>";
                     print"</form>";
                 }
-                    $_SESSION["currentProduct"] =$a_row;
+                    $_SESSION["currentProduct"] = $a_row;
                     mysqli_close($conn);
                 }
             ?>
