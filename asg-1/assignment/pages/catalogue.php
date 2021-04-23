@@ -14,9 +14,10 @@
 
     </head>
     <body>
-        <main>
             <h1>Grocery System Store</h1>
-            <img src="../images/top.png" usemap="#category-map" alt="categories" id="category-map"> <!-- Main image Maps -->
+            
+            <!-- <div id="category-map"> -->
+            <img src="../images/top.png" usemap="#category-map" alt="categories"> <!-- Main image Maps -->
                 <map name="category-map">
                     <area alt="Frozen Food" title="Frozen Food" coords="5,138,89,177" shape="rect" id="frozen" onmouseout="frozenOut();" onmouseover="frozenOver();">
                     <area alt="Fresh Food" title="Fresh Food" coords="182,177,99,138" shape="rect" id="fresh" onmouseout="freshOut();" onmouseover="freshOver();">
@@ -24,8 +25,10 @@
                     <area alt="Home Health" title="Home Health" coords="291,139,370,178" shape="rect" id="health" onmouseout="healthOut();" onmouseover="healthOver();">
                     <area alt="Pet Food" title="Pet Food" coords="385,139,463,177" shape="rect" id="pet" onmouseout="petOut();" onmouseover="petOver();">
                 </map>
+            <!-- </div> -->
 
-                <img src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map id="frozen-map">
+            <div id="frozen-map">
+                <img src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map >
                 <map name="frozen-map"> 
                     <area alt="Hamburger Patties" title="Hamburger Patties"  coords="5,132,87,168" shape="rect" href= "products.php?product_id=1002" target="top-right"></area>
                     <area alt="500 gram - Fish Fingers" title="500 gram - Fish Fingers"  coords="60,249,140,289" shape="rect" href= "products.php?product_id=1000" target="top-right"></area>
@@ -34,8 +37,10 @@
                     <area alt="1 Litre - Tub Ice Cream" title="1 Litre - Tub Ice Cream"  coords="252,246,332,287" shape="rect" href= "products.php?product_id=1004" target="top-right"></area>
                     <area alt="2 Litre - Tub Ice Cream" title="2 Litre - Tub Ice Cream"  coords="344,247,427,287" shape="rect" href= "products.php?product_id=1005" target="top-right"></area>
                 </map>
+            </div>
 
-                <img src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map id="fresh-map" >
+            <div id="fresh-map">
+                <img src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map  >
                 <map name="fresh-map"> 
                     <area alt="T'bone Steak" title="T'bone Steak"  coords="5,130,68,169" shape="rect" href= "products.php?product_id=3002" target="top-right"> </area>
                     <area alt="500 gram - Cheddar Cheese" title="500 gram - Cheddar Cheese"  coords="35,247,113,286" shape="rect" href= "products.php?product_id=3000" target="top-right"> </area>
@@ -46,8 +51,10 @@
                     <area alt="Apples" title="Apples"  coords="348,128,412,168" shape="rect" href= "products.php?product_id=3007" target="top-right"> </area>
                     <area alt="Peaches" title="Peaches"  coords="417,131,479,168" shape="rect" href= "products.php?product_id=3005" target="top-right"> </area>
                 </map>
+            </div>
 
-                <img src="../images/beverages.png" alt="beverages" usemap=#beverages-map id="beverages-map" >
+            <div id="beverages-map">
+                <img src="../images/beverages.png" alt="beverages" usemap=#beverages-map  >
                 <map name="beverages-map">
                     <area alt="Chocolate Bar" title="Chocolate Bar"  coords="390,135,471,173" shape="rect" href= "products.php?product_id=4005" target="top-right"> </area>
                     <area alt="200 gram - Coffee" title="200 gram - Coffee"  coords="21,243,82,279" shape="rect" href= "4003" target="top-right"> </area>
@@ -56,8 +63,10 @@
                     <area area alt="Pack 200 Earl Grey" title="Pack 200 Earl Grey"  coords="298,243,360,280" shape="rect" href= "products.php?product_id=4002" target="top-right"> </area>
                     <area alt="Pack 100 - Earl Grey" title="Pack 100 - Earl Grey"  coords="227,242,291,281" shape="rect" href= "products.php?product_id=4001" target="top-right"> </area>
                 </map>
+            </div>
                 
-                <img src="../images/home-health.png" alt="home health" usemap=#health-map id="health-map" >
+            <div id="health-map">
+                <img src="../images/home-health.png" alt="home health" usemap=#health-map  >
                 <map name="health-map">
                     <area alt="Pack 24 - Panadol" title="Pack 24 - Panadol"  coords="61,247,141,285" shape="rect" href= "products.php?product_id=2000" target="top-right"> </area>
                     <area alt="Bottle 50 - Panadol" title="Bottle 50 - Panadol"  coords="156,248,234,285" shape="rect" href= "products.php?product_id=2001" target="top-right"> </area>
@@ -67,8 +76,10 @@
                     <area alt="Laundry Bleach" title="Laundry Bleach"  coords="383,130,464,168" shape="rect" href= "products.php?product_id=2006" target="top-right">
                     <area alt="Bath Soap" title="Bath Soap"  coords="7,130,89,168" shape="rect" href= "products.php?product_id=2002" target="top-right"> </area>
                 </map>
+            </div>
 
-                <img src="../images/pet-food.png" alt="pet food" usemap=#pet-map id="pet-map" >
+            <div id="pet-map">
+                <img src="../images/pet-food.png" alt="pet food" usemap=#pet-map  >
                 <map name="pet-map"> 
                     <area alt="Bird Food" title="Bird Food"  coords="182,170,101,130" shape="rect" href= "products.php?product_id=5002" target="top-right"> </area>
                     <area alt="Cat Food" title="Cat Food"  coords="195,130,276,17" shape="rect" href= "products.php?product_id=5003" target="top-right"> </area>
@@ -77,7 +88,6 @@
                     <area alt="Dry Dog Food 5 kg. Pack" title="Dry Dog Food 5 kg. Pack"  coords="345,246,429,285" shape="rect" href= "products.php?product_id=5001" target="top-right"> </area>
                 </map>
             </div>
-        </main>
         <script src="../js/catalogue.js"></script>
     </body>
 </html>

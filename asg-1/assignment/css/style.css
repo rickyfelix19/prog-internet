@@ -34,7 +34,7 @@ h1, h2{
 table {
     text-align: middle;
     font-size: 12px;
-    border: 1px black;
+    border: 2px black;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -141,7 +141,7 @@ hr { /* line separator */
     border:"0";
     z-index: 0; 
     position: relative;
-    display: none;
+     display: none;
     /* visibility: hidden; */
 }
 

@@ -23,3 +23,7 @@
 5. Checkout Page
    1. Make a form - who, where, etc (done)
    2. Send Form -> thank you for purchasing (done)
+
+
+
+start earlier next time :) sorry lol

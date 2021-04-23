@@ -1,6 +1,24 @@
 <?php
-session_start();
-?>
+
+    // if user press reset button, reset the session
+    if(isset($_GET['reset'])) {
+            session_start();
+        unset($_SESSION['cart']);
+            session_destroy();
+    }
+
+    session_start();
+
+    // Check Cart Session exist or not
+    if(isset($_SESSION['cart']) && count($_SESSION['cart'] != 0)) {
+        $list = $_SESSION['cart'];
+
+        foreach ($list as $item) {
+            $id = $item['product_id'];
+        }
+    }
+
+?> 
 
 <!DOCTYPE html>
 
@@ -31,8 +49,8 @@ session_start();
                 }
                 
                 // 2. Run a query
-                $product_id = $_REQUEST['product_id'];
-                $query_string = "select * from products where product_id = $product_id";
+                // $product_id = $_REQUEST['product_id'];
+                $query_string = "select * from products where product_id = $id";
 
                 // 3. Execute a query
                 $result = mysqli_query($conn, $query_string);
@@ -40,12 +58,10 @@ session_start();
                 // 4. Number of return rows
                 $num_rows = mysqli_num_rows($result);
                 // echo $num_rows; // check and see if the code above runs properly or not
-                
-                // 5. Make an Array
-                
 
-                // 6. Display values
+                // 5. Display values
                 if ($num_rows > 0 ) {
+                    if ( $a_row = mysqli_fetch_array($result) ) { // 4. To retrieve the rows
                     // this form comes from cart to checkout
                     print "<form name='checkout' action='checkout.php' method='POST' target='top-right'>";
                         print "<table>";
@@ -71,12 +87,13 @@ session_start();
                                 print"<th>Shopping Cart Total</th>";
                             print"</tr>";
                             print"<tr>\n";
-                                print "<td class='cartForm'><button type='submit' value='Purchase' class='buy'>Add to Cart</button>";
-                                print "<td class='cartForm'><button type='reset'>Clear Form</td>";
+                                print "<td class='cartForm'><button type='submit' value='Purchase' id='checkout' target='checkout.php'></button>";
+                                print "<td class='cartForm'><button type='reset' value='reset' name='reset' id='reset'>Reset</td>";
                             print"</tr>";
                         print "</table>";
                     print"</form>";
                 }
+            }
             ?>
         </main>
         
