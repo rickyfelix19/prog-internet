@@ -10,33 +10,55 @@
         <meta name="author" content="Ricky Felix">
         <meta name="description" content="Grocery System Store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/mystyle.css">
+        <link rel="stylesheet" href="./css/style.css">
 
     </head>
     <body>
-        
-        <main>
+            <!-- intial
             <div class="container">
-                <div class="container__half"> <!-- left pane ; catalogue -->
-                    <div><h1>Grocery System Store</h1></div> 
-                    <!-- catalogue.php -->
-                    <iframe src="./pages/catalogue.php" title="Catalogue"></iframe><!-- <?php include ('./pages./container.php')?> -->
+                <div class="container__half"> -> left pane ; catalogue
+                    <div><h1>Grocery System Store</h1></div>  
+                    <frame src="./pages/catalogue.php" title="Catalogue" name="left"></frame>
                 </div>
-                <div class="container__half"> <!-- right pane -->
+                <div class="container__half">
                     <div class="top_right">
                         <div><h1>Add Product to Cart</h1></div>
-                         <!-- products.php  -->
-                         <iframe src="./pages/products.php" title="Products"></iframe><!-- <?php include ('./pages/products.php')?> -->
-                    </div> <!-- top right pane ; products-->
+                         <frame src="./pages/products.php" title="Products" name="top_right"></frame>
+                    </div>
                     <div class="bottom_right">
                         <div><h1>Shopping Cart</h1></div>
-                         <!-- cart.php -->
-                         <iframe src="./pages/cart.php" title="Cart"></iframe><!-- <?php include ('./pages/cart.php')?> -->
-                    </div> <!-- bottom right pane ; cart -->
+                         <frame src="./pages/cart.php" title="Cart" name="bottom_right"></frame>
+                    </div>
                 </div>
-            </div>
-        </main>e
+            </div> 
+            -->
+            <!-- HTML 5 stop support frameset 
+                <frameset>
+                <frameset cols="500,*" frameborder="0" >
+                        <frame src="./pages/catalogue.php" title="Catalogue" name="left"></frame>
+                </frameset>
+                <frameset rows="50%,*">
+                        <frame frameborder="0" src="./pages/products.php" title="Products" name="top-right" ></frame>
+                        <frame frameborder="0" src="./pages/catalogue.php" title="Catalogue" name="bottom-right" scrolling="yes"></frame>
+                </frameset>
+            </frameset> -->
+        <main>
+            <div class="frames">
+                <div class="left-pane">
+                    <div class ="left-all"> <iframe src="./pages/catalogue.php" title="Catalogue" name="left" scrolling="no"></iframe> </div>
+                </div>
+                <div class="right-pane"> 
+                    <div class="top-right"> 
+                        <iframe src="./pages/products.php" title="Products" name="top-right" scrolling="no"></iframe>
+                    </div>                    
+                    <hr>
+                    <div class="bottom-right">  
+                        <iframe src="./pages/cart.php" title="Cart" name="bottom-right" scrolling="no"></iframe>
+                    </div>
+                </div>
+        </div>
+        </main>
         
-        <script src="./js"></script>
+        <!-- <script src="./js"></script> -->
     </body>
 </html>

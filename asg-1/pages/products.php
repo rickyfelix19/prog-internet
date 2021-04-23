@@ -19,13 +19,15 @@
     </head>
     <body>
         <main>
+            <h2>Add Products to Cart</h2>
             <?php
             
                 // 0. Get Values from Pages (if necessary)
                 // $GET_REQUEST = 
                 
                 // 1. Connect to Database
-                $conn = new mysqli_connect("localhost", "uts", "internet", "assignment1"); // server host, username, password, database name
+                $conn = mysqli_connect("127.0.0.1", "uts", "internet", "assignment1"); // server host, username, password, database name
+                //  aax5grlzdab4wq.cldcl6stxuy9.us-east-1.rds.amazonaws.com
 
                 // Check connection
                 if (!$conn) {
@@ -34,7 +36,7 @@
 
                 // 2. Run a query
                 $product_id = $_REQUEST['product_id'];
-                $_SESSION["currentID"] = $ID;
+                $_SESSION['currentID'] = $ID;
                 $query_string = "select * from  products where product_id = $product_id";
 
                 // 3. Execute a query
@@ -48,9 +50,10 @@
                 if ($num_rows > 0 ) {
                     if ( $a_row = mysqli_fetch_array($result) ) { // 4. To retrieve the rows
                     // this form comes from catalogue to product
-                    print"<form action ='cart.php' name='cart' method='GET'>";
+                    print"<form action ='cart.php' name='cart' method='GET' target='bottom-right' onSubmit='quantityNotification();' >";  
                     print"<table>";
                     print"<tr>\n";
+                        // Label Names 
                         print"<th>Product Id</th>";
                         print"<th>Product Name</th>";
                         print"<th>Unit Price</th>";
@@ -58,17 +61,20 @@
                         print"<th>In Stock</th>";
                     print"</tr>";
                     print"<tr>\n";
-                        print"<td>$a_row[product_id]</td>";
-                        print"<td>$a_row[product_name]</td>";
-                        print"<td>$a_row[unit_price]</td>";
-                        print"<td>$a_row[unit_quantity]</td>";
-                        print"<td>$a_row[in_stock]</td>";
-                        print"<td>button type='submit' class='buy'>Add to Cart</button></td>";
+                        // Values
+                        print"<td>".$a_row['product_id']."</td>";
+                        print"<td>".$a_row['product_name']."</td>";
+                        print"<td>".$a_row['unit_price']."</td>";
+                        print"<td>".$a_row['unit_quantity']."</td>";
+                        print"<td>".$a_row['in_stock']."</td>";
+
+                        print"<td><input type='number' id='value' min='1' max='20' value='0'></td>";
+                        print"<td>button type='submit' value='add' class='buy'>Add to Cart</button></td>";
                     print"</tr>";
                     print"</table>";
                     print"</form>";
                 }
-                    $_SESSION["currentProduct"] = $a_row;
+                    $_SESSION['checkout'] = $a_row;
                     mysqli_close($conn);
                 }
             ?>

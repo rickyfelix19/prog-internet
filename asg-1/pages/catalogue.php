@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <title>Grocery System Store</title>
+        <title>Catalogue</title>
 
         <!-- description -->
         <meta name="author" content="Ricky Felix">
@@ -15,13 +15,14 @@
     </head>
     <body>
         <main>
-            <img src="../images/top.png" usemap="#category-map" alt="categories"> <!-- Main image Maps -->
+            <h1>Grocery System Store</h1>
+            <img src="../images/top.png" usemap="#category-map" alt="categories" id="category-map"> <!-- Main image Maps -->
                 <map name="category-map">
-                    <area alt="Frozen Food" title="Frozen Food" coords="5,138,89,177" shape="rect" id="hover" >
-                    <area alt="Fresh Food" title="Fresh Food" coords="182,177,99,138" shape="rect" id="hover" >
-                    <area alt="Beverages" title="Beverages" coords="275,178,196,139" shape="rect" id="hover" >
-                    <area alt="Home Health" title="Home Health" coords="291,139,370,178" shape="rect" id="hover" >
-                    <area alt="Pet Food" title="Pet Food" coords="385,139,463,177" shape="rect" id="hover" >
+                    <area alt="Frozen Food" title="Frozen Food" coords="5,138,89,177" shape="rect" id="frozen" onmouseout="frozenOut();" onmouseover="frozenOver();">
+                    <area alt="Fresh Food" title="Fresh Food" coords="182,177,99,138" shape="rect" id="fresh" onmouseout="freshOut();" onmouseover="freshOver();">
+                    <area alt="Beverages" title="Beverages" coords="275,178,196,139" shape="rect" id="beverages" onmouseout="beveragesOut();" onmouseover="beveragesOver();">
+                    <area alt="Home Health" title="Home Health" coords="291,139,370,178" shape="rect" id="health" onmouseout="healthOut();" onmouseover="healthOver();">
+                    <area alt="Pet Food" title="Pet Food" coords="385,139,463,177" shape="rect" id="pet" onmouseout="petOut();" onmouseover="petOver();">
                 </map>
 
                 <img src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map id="frozen-map">
@@ -34,7 +35,7 @@
                     <area alt="2 Litre - Tub Ice Cream" title="2 Litre - Tub Ice Cream"  coords="344,247,427,287" shape="rect" href= "products.php?product_id=1005" target="top-right"></area>
                 </map>
 
-                <img src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map id="fresh-map">
+                <img src="../images/fresh-food.png" alt="fresh food" usemap=#fresh-map id="fresh-map" >
                 <map name="fresh-map"> 
                     <area alt="T'bone Steak" title="T'bone Steak"  coords="5,130,68,169" shape="rect" href= "products.php?product_id=3002" target="top-right"> </area>
                     <area alt="500 gram - Cheddar Cheese" title="500 gram - Cheddar Cheese"  coords="35,247,113,286" shape="rect" href= "products.php?product_id=3000" target="top-right"> </area>
@@ -46,7 +47,7 @@
                     <area alt="Peaches" title="Peaches"  coords="417,131,479,168" shape="rect" href= "products.php?product_id=3005" target="top-right"> </area>
                 </map>
 
-                <img src="../images/beverages.png" alt="beverages" usemap=#beverages-map id="beverages-map">
+                <img src="../images/beverages.png" alt="beverages" usemap=#beverages-map id="beverages-map" >
                 <map name="beverages-map">
                     <area alt="Chocolate Bar" title="Chocolate Bar"  coords="390,135,471,173" shape="rect" href= "products.php?product_id=4005" target="top-right"> </area>
                     <area alt="200 gram - Coffee" title="200 gram - Coffee"  coords="21,243,82,279" shape="rect" href= "4003" target="top-right"> </area>
@@ -56,7 +57,7 @@
                     <area alt="Pack 100 - Earl Grey" title="Pack 100 - Earl Grey"  coords="227,242,291,281" shape="rect" href= "products.php?product_id=4001" target="top-right"> </area>
                 </map>
                 
-                <img src="../images/home-health.png" alt="home health" usemap=#health-map id="health-map">
+                <img src="../images/home-health.png" alt="home health" usemap=#health-map id="health-map" >
                 <map name="health-map">
                     <area alt="Pack 24 - Panadol" title="Pack 24 - Panadol"  coords="61,247,141,285" shape="rect" href= "products.php?product_id=2000" target="top-right"> </area>
                     <area alt="Bottle 50 - Panadol" title="Bottle 50 - Panadol"  coords="156,248,234,285" shape="rect" href= "products.php?product_id=2001" target="top-right"> </area>
@@ -67,7 +68,7 @@
                     <area alt="Bath Soap" title="Bath Soap"  coords="7,130,89,168" shape="rect" href= "products.php?product_id=2002" target="top-right"> </area>
                 </map>
 
-                <img src="../images/pet-food.png" alt="pet food" usemap=#pet-map id="pet-map">
+                <img src="../images/pet-food.png" alt="pet food" usemap=#pet-map id="pet-map" >
                 <map name="pet-map"> 
                     <area alt="Bird Food" title="Bird Food"  coords="182,170,101,130" shape="rect" href= "products.php?product_id=5002" target="top-right"> </area>
                     <area alt="Cat Food" title="Cat Food"  coords="195,130,276,17" shape="rect" href= "products.php?product_id=5003" target="top-right"> </area>

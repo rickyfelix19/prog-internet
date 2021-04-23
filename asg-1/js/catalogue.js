@@ -3,12 +3,12 @@
         // document.getElementById("#hover").onclick(function() {
         // });
         document.getElementById("hover").addEventListener("mouseover", function() {
-            document.getElementById("myimg").style.visibility = "hidden"
+            document.getElementById("myimg").style.display = "block"
         });
         document.getElementById("hover").addEventListener("mouseout", function() {
-            document.getElementById("myimg").style.visibility = "visible"
+            document.getElementById("myimg").style.display = "block"
         });
-        // document.getElementById("myimg").style.visibility = "hidden";
+        // document.getElementById("myimg").style.display = "block";
     }
 */
 
@@ -21,47 +21,61 @@
     Pet Food
 */
 
-function frozenOverOut() {
-    document.getElementById("hover").addEventListener("mouseover", function() {
-        document.getElementById("frozen-map").style.visibility = "hidden"
+function frozenOut() {
+    document.getElementById("frozen").addEventListener("mouseout", function() {
+        document.getElementById("frozen-map").style.display = "none"
     });
-    document.getElementById("hover").addEventListener("mouseout", function() {
-        document.getElementById("frozen-map").style.visibility = "visible"
+}
+function frozenOver() {
+    document.getElementById("frozen").addEventListener("mouseover", function() {
+        document.getElementById("frozen-map").style.display = "block"
     });
 }
 
-function freshOverOut() {
-    document.getElementById("hover").addEventListener("mouseover", function() {
-        document.getElementById("fresh-map").style.visibility = "hidden"
-    });
-    document.getElementById("hover").addEventListener("mouseout", function() {
-        document.getElementById("fresh-map").style.visibility = "visible"
+function freshOut() {
+    document.getElementById("fresh").addEventListener("mouseout", function() {
+        document.getElementById("fresh-map").style.display = "none"
     });
 }
 
-function beveragesOverOut() {
-    document.getElementById("hover").addEventListener("mouseover", function() {
-        document.getElementById("beverages-map").style.visibility = "hidden"
-    });
-    document.getElementById("hover").addEventListener("mouseout", function() {
-        document.getElementById("beverages-map").style.visibility = "visible"
+function freshOver() {
+    document.getElementById("fresh").addEventListener("mouseover", function() {
+        document.getElementById("fresh-map").style.display = "block"
     });
 }
 
-function healthOverOut() {
-    document.getElementById("hover").addEventListener("mouseover", function() {
-        document.getElementById("health-map").style.visibility = "hidden"
-    });
-    document.getElementById("hover").addEventListener("mouseout", function() {
-        document.getElementById("health-map").style.visibility = "visible"
+function beveragesOut() {
+    document.getElementById("beverages").addEventListener("mouseout", function() {
+        document.getElementById("beverages-map").style.display = "none"
     });
 }
 
-function petOverOut() {
-    document.getElementById("hover").addEventListener("mouseover", function() {
-        document.getElementById("pet-map").style.visibility = "hidden"
+function beveragesOver() { 
+    document.getElementById("beverages").addEventListener("mouseover", function() {
+        document.getElementById("beverages-map").style.display = "block"
     });
-    document.getElementById("hover").addEventListener("mouseout", function() {
-        document.getElementById("pet-map").style.visibility = "visible"
+}
+function healthOut() {
+    document.getElementById("health").addEventListener("mouseout", function() {
+        document.getElementById("health-map").style.display = "none"
+    });
+}
+
+function healthOver() {
+    document.getElementById("health").addEventListener("mouseover", function() {
+        document.getElementById("health-map").style.display = "block"
+    });
+}
+
+function petOut() {
+    document.getElementById("pet").addEventListener("mouseout", function() {
+        document.getElementById("pet-map").style.display = "none"
+    });
+
+}
+
+function petOver() {
+    document.getElementById("pet").addEventListener("mouseover", function() {
+        document.getElementById("pet-map").style.display = "block"
     });
 }
