@@ -29,14 +29,30 @@ html, body {
 h1, h2{
     color: #ffffff;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-table {
+table, tr ,td, th {
+    /* text-align: middle; */
+    /* width: 100%; */
+    border-collapse: collapse;    
+    border: solid white;
+    margin: 0px;
+    padding: 12px;
+        /* text */
+    color: white;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* text-align: middle; */
+}
+
+/* td, th, tr {
     text-align: middle;
     font-size: 12px;
-    border: solid 2px black;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-}
+    padding: 12px; 
+} */
 
 /* ---------------------------index layout--------------------------- */
 
@@ -58,19 +74,19 @@ iframe {
     border: none; 
     overflow-y: auto; 
     overflow-x: hidden;
-    /*margin: 0px;*/
-    /*padding: 0px;*/
+    margin: 0px;
+    padding: 0px;
 }
 
 .left-pane {
     width : 55%;
-    /* height : 1070px; */
+    /* height : 1070px; */  
     float: left;
     background-color: #1FAA6C;
 }
 
 .left-all {
-    height: 710px;
+    height: 709px;
     width: 90%;
     padding: 20px;
 }
@@ -82,8 +98,8 @@ iframe {
 }
 
 .top-right {
-    /* position: sticky;
-    top: 0 - 70
+    /* position: sticky; */
+    /*top: 0 - 70
     right: 50 - 100 */
     width : 94%;
     height : 310px;
@@ -99,7 +115,7 @@ hr { /* line separator */
  .bottom-right {
     /* position: sticky;
     top: 70 - 100
-    right: 50 - 100 */
+    right: 50 - 100 */x`
     width : 94%;
     height : 340px;
     background-color: #DFA94C;

@@ -16,7 +16,25 @@
     <body>
         
         <main>
-
+        <main>
+            <div class="frames">
+                <div class="left-pane">
+                    <div class ="left-all">
+                        <h1>Grocery System Store</h1>
+                        <!-- <iframe src="./pages/catalogue.php" title="Catalogue" name="left" scrolling="no"></iframe> -->
+                    </div>
+                </div>
+                <div class="right-pane"> 
+                    <div class="top-right"> 
+                        <!-- <iframe src="./pages/products.php" title="Products" name="top-right" scrolling="no"></iframe> -->
+                    </div>
+                <hr> <!-- seperator -->
+                    <div class="bottom-right">  
+                        <!-- <iframe src="./pages/cart.php" title="Cart" name="bottom-right" scrolling="no"></iframe> -->
+                    </div>
+                </div>
+        </div>
+        </main>
         </main>
         
         <script src="../js/"></script>

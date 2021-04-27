@@ -1,8 +1,8 @@
-<?php
+<!-- ?php
     session_start();
 
 
-?> 
+?>  -->
 
 <!DOCTYPE html>
 
@@ -21,8 +21,8 @@
     </head>
     <body>
         <main>
-            <form action ='cart.php' name='cart' method='GET' target='bottom-right' onSubmit='quantityNotification();'>  
-                <table>
+            <form action ='cart.php' name='products' method='GET' target='bottom-right' onSubmit='quantityNotification();'>  
+            <table>
                 <tr>
                     <!-- Label Names  -->
                     <th>Product Id</th>
@@ -37,14 +37,11 @@
                     <td>testing</td>
                     <td>testing</td>
                     <td>testing</td>
-                    <td>testing</td>
-                    <!-- Button -->
-                    <td><input type='number' id='quantityNotification' min='1' value='1'></td>
+                    <td>testing <input type='number' id='quantityNotification' min='1' value='1'></td> <!-- Button -->
+
                 </tr>
-                <tr>
+            </table>
                     <td><input type='submit' value='add' class='buy' name='add to cart' target='cart'></button></td>
-                </tr>
-                </table>
             </form>
 
             <!-- ?php

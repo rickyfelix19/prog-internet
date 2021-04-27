@@ -1,4 +1,4 @@
-<?php
+<!-- ?php
 
     // if user press reset button, reset the session
     if(isset($_GET['reset'])) {
@@ -18,7 +18,7 @@
         }
     }
 
-?> 
+?>  -->
 
 <!DOCTYPE html>
 
@@ -37,35 +37,37 @@
     </head>
     <body>
         <main>
-        <form name='checkout' action='checkout.php' method='POST' target='top-right'>
-            <table>
-                <tr><br>
-                    <th>Product Name
-                    <th>Unit Price</th>
-                    <th>Unit Quantity</th>  
-                    <th>Required Quantity</th>
-                    <th>Total Cost</th>
-                </tr>
-                <tr><br>
-                    <td>testing</td>
-                    <td>testing</td>
-                    <td>testing</td>
-                    <td>testing</td>
-                    <td>testing</td>
-                </tr>
-                <tr><br>
-                <tr>
-                    <th>Number of Products</th>
-                </tr>
-                <tr>
-                    <th>Shopping Cart Total</th>
-                </tr>
-                <tr><br>
-                    <td class='cartForm'><button type='submit' value='Purchase' id='checkout' target='checkout.php'>Checout</button>
+            <form name='cart' action='checkout.php' method='POST' target='top-right'>
+                <table>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Unit Price</th>
+                        <th>Unit Quantity</th>  
+                        <th>Required Quantity</th>
+                        <th>Total Cost</th>
+                    </tr>
+                    <tr>
+                        <td>testing</td>
+                        <td>testing</td>
+                        <td>testing</td>
+                        <td>testing</td>
+                        <td>testing</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th colspan="4">Number of Products</th>
+                        <th colspan="4">testing</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Shopping Cart Total</th>
+                        <th colspan="4">testing</th>
+                    </tr>
+                </table>
+                <div>
+                    <td class='cartForm'><button type='submit' value='Purchase' id='checkout' target='checkout.php'>Checkout</button>
                     <td class='cartForm'><button type='reset' value='reset' name='reset' id='reset'>Reset</td>
-                </tr>
-            </table>                    
-        </form>
+                </div>
+            </form>
             
             <!-- ?php
                 // 1. Connect to DB
