@@ -34,7 +34,7 @@ h1, h2{
 table {
     text-align: middle;
     font-size: 12px;
-    border: 2px black;
+    border: solid 2px black;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 

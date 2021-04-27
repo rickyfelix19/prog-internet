@@ -16,7 +16,7 @@
     <body>
             <h1>Grocery System Store</h1>
             
-            <!-- <div id="category-map"> -->
+            <div id="category-map">
             <img src="../images/top.png" usemap="#category-map" alt="categories"> <!-- Main image Maps -->
                 <map name="category-map">
                     <area alt="Frozen Food" title="Frozen Food" coords="5,138,89,177" shape="rect" id="frozen" onmouseout="frozenOut();" onmouseover="frozenOver();">
@@ -25,7 +25,7 @@
                     <area alt="Home Health" title="Home Health" coords="291,139,370,178" shape="rect" id="health" onmouseout="healthOut();" onmouseover="healthOver();">
                     <area alt="Pet Food" title="Pet Food" coords="385,139,463,177" shape="rect" id="pet" onmouseout="petOut();" onmouseover="petOver();">
                 </map>
-            <!-- </div> -->
+            </div>
 
             <div id="frozen-map">
                 <img src="../images/frozen-food.png" alt="frozen food" usemap=#frozen-map >

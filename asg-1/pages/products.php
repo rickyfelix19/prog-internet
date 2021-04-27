@@ -21,8 +21,33 @@
     </head>
     <body>
         <main>
-            <h2>Add Products to Cart</h2>
-            <?php
+            <form action ='cart.php' name='cart' method='GET' target='bottom-right' onSubmit='quantityNotification();'>  
+                <table>
+                <tr>
+                    <!-- Label Names  -->
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Unit Quantity</th>
+                    <th>In Stock</th>
+                </tr>
+                <tr>
+                    <!-- Values -->
+                    <td>testing</td>
+                    <td>testing</td>
+                    <td>testing</td>
+                    <td>testing</td>
+                    <td>testing</td>
+                    <!-- Button -->
+                    <td><input type='number' id='quantityNotification' min='1' value='1'></td>
+                </tr>
+                <tr>
+                    <td><input type='submit' value='add' class='buy' name='add to cart' target='cart'></button></td>
+                </tr>
+                </table>
+            </form>
+
+            <!-- ?php
             
                 // 0. Check if product_id has been called from catalogue.php
                 if (isset($_POST['product_id']) && isset($_GET['product_id'])){
@@ -48,7 +73,7 @@
                 array_push($_SESSION['cart'], $item);
 
                 // 1. Connect to Database
-                $conn = mysqli_connect("127.0.0.1", "uts", "internet", "assignment1"); // server host, username, password, database name
+                $conn = mysqli_connect("localhost", "uts", "internet", "assignment1"); // server host, username, password, database name
                 //  aax5grlzdab4wq.cldcl6stxuy9.us-east-1.rds.amazonaws.com
 
                 // Check connection
@@ -70,29 +95,29 @@
                 if ($num_rows > 0 ) {
                     if ( $a_row = mysqli_fetch_array($result) ) { // 4. To retrieve the rows
                     // this form comes from catalogue to product
-                    print"<form action ='cart.php' name='cart' method='GET' target='bottom-right' onSubmit='quantityNotification();' >";  
-                    print"<table id>";
-                    print"<tr>\n";
+                    echo"<form action ='cart.php' name='cart' method='GET' target='bottom-right' onSubmit='quantityNotification();' >";  
+                    echo"<table id>";
+                    echo"<tr>\n";
                         // Label Names 
-                        print"<th>Product Id</th>";
-                        print"<th>Product Name</th>";
-                        print"<th>Unit Price</th>";
-                        print"<th>Unit Quantity</th>";
-                        print"<th>In Stock</th>";
-                    print"</tr>";
-                    print"<tr>\n";
+                        echo"<th>Product Id</th>";
+                        echo"<th>Product Name</th>";
+                        echo"<th>Unit Price</th>";
+                        echo"<th>Unit Quantity</th>";
+                        echo"<th>In Stock</th>";
+                    echo"</tr>";
+                    echo"<tr>\n";
                         // Values
-                        print"<td>".$a_row['product_id']."</td>";
-                        print"<td>".$a_row['product_name']."</td>";
-                        print"<td>".$a_row['unit_price']."</td>";
-                        print"<td>".$a_row['unit_quantity']."</td>";
-                        print"<td>".$a_row['in_stock']."</td>";
+                        echo"<td>".$a_row['product_id']."</td>";
+                        echo"<td>".$a_row['product_name']."</td>";
+                        echo"<td>".$a_row['unit_price']."</td>";
+                        echo"<td>".$a_row['unit_quantity']."</td>";
+                        echo"<td>".$a_row['in_stock']."</td>";
                         //Button
-                        print"<td><input type='number' id='quantityNotification' min='1' value='1'></td>";
-                        print"<td>input type='submit' value='add' class='buy' name='add to cart' target='cart'></button></td>";
-                    print"</tr>";
-                    print"</table>";
-                    print"</form>";
+                        echo"<td><input type='number' id='quantityNotification' min='1' value='1'></td>";
+                        echo"<td>input type='submit' value='add' class='buy' name='add to cart' target='cart'></button></td>";
+                    echo"</tr>";
+                    echo"</table>";
+                    echo"</form>";
                 }
                     mysqli_close($conn);
                 }
@@ -101,7 +126,7 @@
                 //     require('checkout.php');
                 // }
 
-            ?>
+            ?> -->
         </main>
         <script src="../js/products.js"></script>
     </body>
