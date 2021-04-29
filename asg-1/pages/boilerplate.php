@@ -20,7 +20,7 @@
             <div class="frames">
                 <div class="left-pane">
                     <div class ="left-all">
-                        <h1>Grocery System Store</h1>
+                        <h1>Grocery System Store</h1>           
                         <!-- <iframe src="./pages/catalogue.php" title="Catalogue" name="left" scrolling="no"></iframe> -->
                     </div>
                 </div>
