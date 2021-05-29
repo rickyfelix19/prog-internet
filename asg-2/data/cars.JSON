@@ -52,7 +52,7 @@
 	"seats": "5",
 	"price_per_day": "120",
 	"description": "car number 4",
-	"images" : "../images/Cherokee.png"
+	"images" : "../images/Cherokee.jpg"
 },
 {
 	"id" : "5",
@@ -80,7 +80,7 @@
 	"seats": "5",
 	"price_per_day": "120",
 	"description": "car number 6",
-	"images" : "../images/GLC.png"
+	"images" : "../images/GLC.jpg"
 },
 {
 	"id" : "7",
@@ -94,7 +94,7 @@
 	"seats": "5",
 	"price_per_day": "120",
 	"description": "car number 7",
-	"images" : "../images/Golf.png"
+	"images" : "../images/Golf.jpg"
 },
 {
 	"id" : "8",
