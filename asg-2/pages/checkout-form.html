@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Hertz-UTS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- local css -->
+      <link rel="stylesheet" href="../css/styles.css">
+      <!-- CSS Bootstrap v5.0  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <!-- Bootswatch, Pulse  -->
+      <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.css" integrity="sha384-uvREVKhmY1/Y+Jl+/xTE1JTNVycUxQNgGN8Wbjp7z+eOVibvJVJiy+6Fn8szL8va" crossorigin="anonymous">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" crossorigin="anonymous"></script>
+      <!-- local Javascript -->
+      <script src="../javascript/form.js" crossorigin="anonymous"></script>
+    <title>Hertz-UTS</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Hertz-UTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./booking.php">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main> <!-- shows user details forms here-->
+      <div class="table-checkout justify-content-md-center">
+        <form onSubmit="form(); return false;">
+            <fieldset class="col-md-8 order-md-1">
+                <legend>Customer Details Form</legend>
+                <div>
+                  <p>Please fill in your details. <br>
+                  Required Field are indicated with <span style="color: red">*</span> 
+                  </p>  
+                </div>
+              
+                <div class="form-group"> <!-- Full Name -->
+                    <label for="firstname" class="form-label mt-4 required">Full Name <span style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="full name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group"> <!-- Email Address -->
+                    <label for="email" class="form-label mt-4">Email Address <span style="color: red">*</span></label>
+                    <div class="form-group">
+                      <div>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group"> <!-- Address Line 1 -->
+                    <label for="address1" class="form-label mt-4">Address Line 1 <span style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="address1" placeholder="Enter address 1" required>
+                </div>
+                <div class="form-group"> <!-- Address Line 2 -->
+                    <label for="address2" class="form-label mt-4">Address Line 2</label>
+                    <input type="text" class="form-control" id="address2" placeholder="Enter address 2">
+                </div>
+                <div class="form-group"> <!-- State -->
+                    <label for="state" class="form-label mt-4">State <span style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="state" placeholder="Enter your State" required>
+                </div>
+                <div class="form-group"> <!-- City -->
+                    <label for="city" class="form-label mt-4">City <span style="color: red">*</span></label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter your City" required>
+                </div>
+                <div class="form-group"> <!-- Postcode -->
+                    <label for="postcode" class="form-label mt-4">Postcode <span style="color: red">*</span></label>
+                    <input type="number" class="form-control" id="postcode" placeholder="Enter your Postcode" required>
+                </div>
+                <div class="form-group"> <!-- Payment Type -->
+                    <label for="payment" class="form-label mt-4">Payment Type <span style="color: red">*</span></label>
+                    <select class="form-select" id="paymenttype">
+                        <option value= "">Select Your Payment Type</option>
+                        <option value= "VISA">VISA</option>
+                        <option value= "MASTERCARD">MASTERCARD</option>
+                        <option value= "PAYPAL">PAYPAL</option>
+                        <option value= "AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                        <option value= "APPLE PAY">APPLE PAY</option>
+                        <option value= "GOOGLE PAY">GOOGLE PAY</option>
+                    </select>
+                    </div>
+                    <div class="cartTotal"></div> <!-- show Total Rent  -->
+                <div class= "form-button flex-column">
+                    <button type ="button" class="btn btn-secondary" onClick="backButton()">Rent More</button>  <!-- Continue Selection - go back to booking.php -->
+                    <button type ="submit" class="btn btn-primary">Book Now</button> <!-- Booking  - continue to success.php -->
+                </div>
+            </fieldset>
+        </form>
+      </div>
+    </main>
+
+  <footer class="footer mt-auto bg-primary">
+    <div class="container-fluid">
+      <p class="text-center fw-bold">Hertz-UTS, 2021</p>
+    </div>
+  </footer>
+
+  </body>
+</html>

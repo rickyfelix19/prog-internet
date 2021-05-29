@@ -1,6 +1,7 @@
 /* Lists of CSS 5.0 Documentation used:
     CSS 5.0 Pulse Showcase: https://bootswatch.com/pulse/ 
     CSS 5.0 Pulse CSS: https://bootswatch.com/5/pulse/bootstrap.css
+    CSS 5.0 Pulse: https://bootswatch.com/pulse/
     CSS 5.0 Documentation: https://getbootstrap.com/docs/5.0/
     CSS 5.0 Examples: https://getbootstrap.com/docs/5.0/examples/cheatsheet/
     CSS 5.0 Cheat Sheets: https://bootstrapcreative.com/resources/bootstrap-5-cheat-sheet-classes-index/
@@ -14,20 +15,46 @@ html, body {
     padding: 0px;
 }
 
-main {
-    padding: 10px;
+.wall {    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 7px;
+    flex-wrap: wrap;
+    margin: 1rem;
+    /* margin-top: 7rem; */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    /* 
+    padding-left: 180px;
+    padding-right: 80px; 
+    */
 }
 
-footer {
+.table-booking {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 40px;
+    /* text-align: left; */
+}
+
+.table-checkout {
+    margin-top: 5px;
+    margin-left: 500px;
+    /* margin-right: 40px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button {
+    align-items: center;
+    align-content: center;
+}
+
+.footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    bottom: 0px;
+    color: white;
     text-align: center;
-    position: fixed;
-    margin: 0;
-    padding: 0;    
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    color: rgba(255, 255, 255, 0.55);
-
-}
+  } 

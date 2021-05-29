@@ -1,4 +1,4 @@
- <!-- Reading the JSON file  -->
+<!-- Reading the JSON file  -->
     $strJSONContents = file_get_contents("../data/cars.JSON");  
 
     <!-- Initialize the JSON string -->
@@ -69,3 +69,14 @@
     Joomla - Content Management Style 
     Droopal - Content Management Style
     OSCommerce - E-Commerce System
+
+<!-- get json file -->
+    $.ajax({
+        dataType: "json",
+        url: url,
+        data: data,
+        success: success;
+    });
+
+<!-- shorthand -->
+    jQuery.getJSON( url[, data] [, success])

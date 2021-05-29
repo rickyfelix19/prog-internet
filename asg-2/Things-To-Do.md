@@ -10,18 +10,12 @@ Saving data using Cookies/ Sessions/ AJAX
 
 ## Things To Figure Out:
 1. How to store User's Information on Success.php
-    - Sessions
-    - Cookies
-    - XML / JSON
-    - All of the above
-    - None of the above
 2. How to repeat forms at booking.php
     - Javascript
 3. Making everything Dynamic: 
     - Cards for products.html
     - Tables for booking.php
-    - Pass in JSON and Function files
-4. AJAX files for returning codes
+    - Pass in JSON using AJAX and Store information using JS (or jQuery) or PHP
 
 ### Storing User Data Information:
 - PHP Cookies???

@@ -1,133 +1,141 @@
+[{
+	"id" : "1",
+	"category": "Sedan",
+	"availability": "TRUE",
+	"brand": "BMW",
+	"model": "320i",
+	"model_Year": "1950",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 1",
+	"images" : "../images/320i.jpg"
+},
 {
-	"warehouse": {
-		"320i": [{
-			"Category": "sedan",
-			"Availability": true,
-			"Brand": "BMW",
-			"Model": "320i",
-			"Model year": "1950",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Camry": [{
-			"Category": "sedan",
-			"Availability": true,
-			"Brand": "Toyota",
-			"Model": "Camry",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Catpiva": [{
-			"Category": "suv",
-			"Availability": true,
-			"Brand": "Chevrolet",
-			"Model": "Captiva",
-			"Model year": "2018",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Cherokee": [{
-			"Category": "suv",
-			"Availability": true,
-			"Brand": "Jeep",
-			"Model": "Cherokee",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Civic": [{
-			"Category": "sedan",
-			"Availability": true,
-			"Brand": "Honda",
-			"Model": "Civic",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"GLC": [{
-			"Category": "suv",
-			"Availability": true,
-			"Brand": "Mercedes-Benz",
-			"Model": "GLC",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Golf": [{
-			"Category": "sedan",
-			"Availability": true,
-			"Brand": "volkswagen",
-			"Model": "Golf",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Jimmy": [{
-			"Category": "suv",
-			"Availability": true,
-			"Brand": "Suzuki",
-			"Model": "Jimny",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"Sonata": [{
-			"Category": "sedan",
-			"Availability": true,
-			"Brand": "Hyundai",
-			"Model": "Sonata",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}],
-
-		"X-trail": [{
-			"Category": "suv",
-			"Availability": true,
-			"Brand": "Nissan",
-			"Model": "X-trail",
-			"Model year": "2013",
-			"Mileage": 10000,
-			"Fuel type": "petrol",
-			"Seats": "5",
-			"Price per day": "$120",
-			"Description": "xxxx"
-		}]
-	}
+	"id" : "2",
+	"category": "Sedan",
+	"availability": "TRUE",
+	"brand": "Toyota",
+	"model": "Camry",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 2",
+	"images" : "../images/Camry.jpg"
+},
+{
+	"id" : "3",
+	"category": "SUV",
+	"availability": "TRUE",
+	"brand": "Chevrolet",
+	"model": "Captiva",
+	"model_Year": "2018",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 3",
+	"images" : "../images/Captiva.jpg"
+},
+{
+	"id" : "4",
+	"category": "SUV",
+	"availability": "FALSE",
+	"brand": "Jeep",
+	"model": "Cherokee",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 4",
+	"images" : "../images/Cherokee.png"
+},
+{
+	"id" : "5",
+	"category": "Sedan",
+	"availability": "TRUE",
+	"brand": "Honda",
+	"model": "Civic",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 5",
+	"images" : "../images/Civic.jpg"
+},
+{
+	"id" : "6",
+	"category": "SUV",
+	"availability": "FALSE",
+	"brand": "Mercedes-Benz",
+	"model": "GLC",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 6",
+	"images" : "../images/GLC.png"
+},
+{
+	"id" : "7",
+	"category": "Sedan",
+	"availability": "TRUE",
+	"brand": "Volkswagen",
+	"model": "Golf",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 7",
+	"images" : "../images/Golf.png"
+},
+{
+	"id" : "8",
+	"category": "SUV",
+	"availability": "FALSE",
+	"brand": "Suzuki",
+	"model": "Jimny",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 8",
+	"images" : "../images/Jimny.jpg"
+},
+{
+	"id" : "9",
+	"category": "Sedan",
+	"availability": "TRUE",
+	"brand": "Hyundai",
+	"model": "Sonata",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 9",
+	"images" : "../images/Sonata.jpg"
+},
+{
+	"id" : "10",
+	"category": "SUV",
+	"availability": "TRUE",
+	"brand": "Nissan",
+	"model": "X-trail",
+	"model_Year": "2013",
+	"mileage": "10000",
+	"fuel_type": "Petrol",
+	"seats": "5",
+	"price_per_day": "120",
+	"description": "car number 10",
+	"images" : "../images/X-trail.jpg"
 }
+]
