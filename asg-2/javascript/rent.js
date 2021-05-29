@@ -10,7 +10,7 @@ $(document).ready(function(){
         <tr class="table-primary">
           <div id="${cart[i].id}">
             <th scope="row"><img style="width:120px;height:120px;" class="rounded mx-auto d-block" src="${cart[i].images}" alt="${cart[i].brand}-${cart[i].model}"</th>
-            <th>${cart[i].model_year}-${cart[i].brand}-${cart[i].model}</th>
+            <th>${cart[i].model_year} ${cart[i].brand} ${cart[i].model}</th>
             <th>$ ${cart[i].price_per_day}</th>
             <th>
               <div class="form-group">
