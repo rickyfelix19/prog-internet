@@ -1,7 +1,7 @@
 let cart;
 $(document).ready(function(){
     let cartTotal = window.sessionStorage.getItem("hertz@total")
-    $(".cartTotal").append(`<h5>Total: ${cartTotal}</h5>`)
+    $(".cartTotal").append(`<h5>You are required to pay: $ ${cartTotal}</h5>`)
 })
 
 function backButton(){
