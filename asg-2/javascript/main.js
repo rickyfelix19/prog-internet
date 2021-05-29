@@ -9,11 +9,12 @@ $(document).ready(function(){
            <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
             <div class="card-body">
               <div class="card-text card-img-container"><img style= "width:300px; height=300px;" src="${field.images}" alt=${field.brand}-${field.model}> </div>
-                <p class="card-text"><${field.brand}-${field.model}-${field.model_year}</p>
+                <br>
+                <p class="card-text"><b>Car Name: </b> ${field.model_year} ${field.brand} ${field.model}</p>
                 <p class="card-text"><b>Mileage: </b>${field.mileage} kms</p>
                 <p class="card-text"><b>Fuel Type: </b>${field.fuel_type}</p>
                 <p class="card-text"><b>Seats: </b>${field.seats}</p>
-                <p class="card-text"><b>Price/day: </b>${field.price_per_day}</p>
+                <p class="card-text"><b>Price/day: </b>$ ${field.price_per_day}</p>
                 <p class="card-text" hidden><b>Availability: </b>${field.availability}</p>
                 <p class="card-text"><b>Description: </b>${field.description}</p>
             <button type="button" class="btn btn-primary d-grid gap-2 col-6 mx-auto" onClick="addCart(${field.id})">Add to cart</button>
