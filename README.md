@@ -7,7 +7,7 @@ Stack Uses:
 - JS DOM manipulation,
 - AWS
 
-## ## Asg -2
+## Asg -2
 Stack Uses:
 - HTML, PHP, CSS
 - JSON,
